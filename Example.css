@@ -1,0 +1,56 @@
+body,
+html{
+    height: 100%;
+}
+
+.header{
+    background-color: aquamarine;
+    height: 100px;
+}
+
+.content{
+    height: 250px;
+    background-color: blanchedalmond;
+}
+
+main div:not(:first-child){
+    height: 100px;
+}
+
+.sign-up{
+    background-color: chartreuse;
+}
+
+.feature-one{
+    background-color: cornflowerblue;
+}
+
+.feature-two{
+    background-color: rgb(210, 100, 237);
+}
+
+.feature-three{
+    background-color: rgb(237, 100, 107);
+}
+
+@media only screen and (min-width: 678px) {
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .wrapper > *{
+        flex-basis: 50%;
+    }
+
+    main div:not(:first-child){
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
