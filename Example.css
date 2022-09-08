@@ -40,17 +40,44 @@ main div:not(:first-child){
     }
 
     .wrapper > *{
-        flex-basis: 50%;
+        flex-basis: 100%;
     }
 
-    main div:not(:first-child){
-        height: 200px;
+    .wrapper > *:not(.content){
+        flex-basis: 50%;
     }
 }
 
 @media only screen and (min-width: 1200px){
-    main{
-        display: flex;
-        flex-direction: column-reverse;
+    .content,
+    .sign-up{
+        flex-basis: 100% !important;
     }
+
+    .feature-one,
+    .feature-two,
+    .feature-three{
+        flex-basis: calc(100%/3) !important;
+    }
+
+    .feature-one{
+        order: 1;
+    }
+
+    .feature-two{
+        order: 3;
+    }
+
+    .feature-three{
+        order: 2;
+    }
+
+    .sign-up{
+        order: 4;
+    }
+
+    .content{
+        order: 5;
+    }
+
 }
