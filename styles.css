@@ -1,0 +1,98 @@
+/* Pirmos užduoties sprendimas. */
+
+.flex-1 {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid rgb(227, 223, 223);
+  padding: 10px 20px 7px 15px;
+}
+
+.flex-1 > * {
+  flex-basis: 50%;
+  margin-bottom: 5px;
+}
+
+
+/* Antros užduoties sprendimas. */
+
+@media screen and (max-width:768px) {
+  .flex-1 {
+    flex-direction: row-reverse;
+  }
+}
+
+
+/* Trečios užduoties sprendimas. */
+
+.flex-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-3 > p:nth-child(even) {
+  align-self: center;
+}
+
+.flex-3 > p:nth-child(3) {
+  align-self: flex-end;
+}
+
+
+/* Ketvirtos užduoties sprendimas. */
+
+.flex-4 {
+  display: flex;
+}
+
+.flex-4 > .ca-test-box:nth-child(2) {
+  flex: 1;
+}
+
+.flex-4 > .ca-test-box:nth-child(5) {
+  flex: 2;
+}
+
+
+/* Penktos užduoties sprendimas. */
+
+.flex-5 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+}
+
+
+/* Šeštos užduoties sprendimas. */
+
+.flex-6 {
+  display: flex;
+}
+
+.flex-6 > span:nth-child(3) {
+  order: -5;
+}
+
+.flex-6 > span:nth-child(10) {
+  order: -4;
+}
+
+.flex-6 > span:nth-child(7) {
+  order: -3;
+}
+
+.flex-6 > span:nth-child(1) {
+  order: 4;
+}
+
+.flex-6 > span:nth-child(2) {
+  order: 5;
+}
+
+
+/* Septintos užduoties sprendimas. */
+
+.flex-7 {
+  
+}
+
