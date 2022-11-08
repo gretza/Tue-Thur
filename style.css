@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 50px;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+    "header header header header"
+    ". main sidebar ."
+    "footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+main {
+    grid-area: main;
+    background-color: bisque;
+    height: 500px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(63, 164, 164);
+    height: 100px;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: rgb(215, 173, 255);
+}
